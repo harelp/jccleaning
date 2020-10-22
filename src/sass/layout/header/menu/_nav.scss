@@ -1,0 +1,35 @@
+nav {
+  width: 80vw;
+  height: 150px;
+  line-height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-grey-dark;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.6px;
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,15 @@
+.heading {
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_primary {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+  }
+}

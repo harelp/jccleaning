@@ -1,0 +1,26 @@
+/*  
+    Name: Harel Peri
+    JCcleaningServices
+    
+*/
+
+// Imports   //
+// ---------//
+
+// @import './abstracts/animations';
+// @import './abstracts/mixins';
+
+@import './abstracts/typography';
+@import './abstracts/variables';
+@import './abstracts/button';
+
+// Default
+@import './default';
+
+// header
+@import './layout/header/header';
+@import './layout/header/menu/_nav';
+@import './layout/header/heading/heading';
+
+// reasons
+@import './layout/reasons/reasons';

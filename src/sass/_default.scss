@@ -1,14 +1,13 @@
-@import './abstracts/variables';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: $color-primary;
+  background: $color-grey-light-1;
   font-size: 16px;
-  //   color: $slate-light;
-  //   font-family: $roboto;
+  color: $color-white;
+  font-family: $pop;
 }
 
 html {
@@ -24,7 +23,29 @@ button {
   cursor: pointer;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
+.container {
+  width: 100%;
+}
+
+.slogan {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7ed56f),
+    to(#28b485)
+  );
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
