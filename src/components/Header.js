@@ -7,8 +7,8 @@ const Header = () => {
         <div className="logo">J&C</div>
         <ul className="menu">
           <li>Home</li>
-          <li>Why Us</li>
           <li>Services</li>
+          <li>Why Us</li>
           <li>Contact</li>
         </ul>
       </nav>

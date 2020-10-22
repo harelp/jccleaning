@@ -1,15 +1,21 @@
 import React from 'react';
-import star from '../../sass/images/star.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {box} from "./boxhelper";
 
 const WhyUs = () => {
+  const reasonBox = box.map((box,key)=>{
+    return (
+    <div className="reasons_box" key={key}>
+          <FontAwesomeIcon icon={box.icon} className="reasons_box_icon"/>
+    <p className="reasons_box_text">{box.text}</p>
+        </div>)
+  })
+
   return (
-    <div className="container">
-      <div className="slogan">Reasons to Choose J&C</div>
+    <div className="container reasons_body">
+      <div className="slogan_alt">Reasons to Choose J&C</div>
       <div className="reasons">
-        <div className="reasons_box">
-          <img src={star} className="reasons_box_icon"></img>
-          <h3 className="lol">Explore the world</h3>
-        </div>
+        {reasonBox}
       </div>
     </div>
   );

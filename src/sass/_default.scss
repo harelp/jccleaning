@@ -7,7 +7,7 @@ body {
   background: $color-grey-light-1;
   font-size: 16px;
   color: $color-white;
-  font-family: $pop;
+  font-family: $lato;
 }
 
 html {
@@ -25,13 +25,17 @@ button {
 
 .container {
   width: 100%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slogan {
   width: 100%;
   text-align: center;
   font-size: 36px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -45,6 +49,20 @@ button {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.slogan_alt {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: $color-grey-light-1;
   letter-spacing: 0.2rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

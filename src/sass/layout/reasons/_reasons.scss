@@ -7,6 +7,7 @@
 
 .reasons_box {
   background-color: rgba($color-white, 0.8);
+  max-width: 250px;
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -19,24 +20,30 @@
   // }
 
   &_icon {
-    width: 68px;
+    font-size: 48px;
+    color: $color-grey-dark-3;
+    margin-bottom: 1.5rem;
+  }
 
-    margin-bottom: 0.5rem;
-    //display: inline-block;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-
-    // @include respond(tab-port) {
-    //   margin-bottom: 0;
-    // }
+  &_text {
+    color: $color-grey-dark;
+    font-size: 18px;
   }
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
+}
+
+.reasons_body {
+  background-color: $color-primary;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
+    ),
+    url(../../images/bg2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
