@@ -33,3 +33,20 @@ nav {
   letter-spacing: 0.6px;
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
 }
+
+@include sm {
+  nav {
+    width: 90vw;
+    height: 220px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+
+    li {
+      padding: 0 5px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const scrollToref = (ref) => window.scrollTo(0, ref.current.offsetTop);

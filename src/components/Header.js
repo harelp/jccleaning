@@ -1,15 +1,17 @@
 import React from 'react';
+import {scrollToref} from './helper';
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header>
+    <header ref={props.scrollTo[0]}>
       <nav>
         <div className="logo">J&C</div>
         <ul className="menu">
-          <li>Home</li>
-          <li>Services</li>
-          <li>Why Us</li>
-          <li>Contact</li>
+          <li onClick={()=>scrollToref(props.scrollTo[0])}>Home</li>
+          
+          <li onClick={()=>scrollToref(props.scrollTo[1])}>Services</li>
+          <li onClick={()=>scrollToref(props.scrollTo[2])}>Why Us</li>
+          <li onClick={()=>scrollToref(props.scrollTo[3])}>Contact</li>
         </ul>
       </nav>
 
@@ -18,9 +20,9 @@ const Header = () => {
           <span className="heading_primary">Cleaning is our #1 Priority</span>
         </h1>
 
-        <a href="!#" className="btn btn--white" style={{ marginTop: '45px' }}>
+        <button type="button" onClick={()=>scrollToref(props.scrollTo[3])} href="!#" className="btn btn--white" style={{ marginTop: '45px' }}>
           Get Started
-        </a>
+        </button>
       </div>
     </header>
   );

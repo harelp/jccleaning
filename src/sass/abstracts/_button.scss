@@ -42,12 +42,13 @@
     }
   }
 
-  &--green {
-    background-color: $color-primary;
+  &--orange {
+    background-color: $color-secondary-dark;
     color: $color-white;
+    padding: 1rem 2rem;
 
     &::after {
-      background-color: $color-primary;
+      background-color: $color-secondary-dark;
     }
   }
 

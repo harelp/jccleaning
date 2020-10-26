@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {box} from "./boxhelper";
 
-const WhyUs = () => {
+const WhyUs = (props) => {
   const reasonBox = box.map((box,key)=>{
     return (
     <div className="reasons_box" key={key}>
@@ -12,7 +12,7 @@ const WhyUs = () => {
   })
 
   return (
-    <div className="container reasons_body">
+    <div className="container reasons_body" ref={props.scrollTo}>
       <div className="slogan_alt">Reasons to Choose J&C</div>
       <div className="reasons">
         {reasonBox}
