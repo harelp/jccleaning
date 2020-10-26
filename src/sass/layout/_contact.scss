@@ -96,7 +96,7 @@ textarea {
 
   input,
   textarea {
-    width: 300px;
-    // max-width: 350px;
+    width: 100% !important;
+    max-width: 300px !important;
   }
 }
