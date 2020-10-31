@@ -60,7 +60,7 @@ const Contact = (props) =>{
             <div className="contact_details">
                  <ul className="company_details">
                      <li>Contact Details</li>
-                    <li><FontAwesomeIcon icon={faEnvelope} className="asd"/> Jachacky2020@gmail.com</li>
+                    <li><FontAwesomeIcon icon={faEnvelope} className="asd"/> Jachucky2020@gmail.com</li>
                     <li><FontAwesomeIcon icon={faPhoneSquareAlt} className="asd"/> 519-902-8514</li>
                  </ul>
 
